@@ -13,10 +13,10 @@ on:
 
 jobs:
   run-hello:
-    name: 😅 Print Hello When Schedule
+    name: 😅 Print Hello
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello word 1 $environment"
+      - run: echo "hello word 1 ${{ github.event.inputs.environment}}"
       - run: echo "hello word 2"
 
   run-hello-2:
