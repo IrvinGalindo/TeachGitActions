@@ -16,11 +16,11 @@ jobs:
     name: 😅 Print Hello
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello word 1 ${{ github.event.inputs.environment}}"
+      - run: echo "hello word 1 ${{ inputs.environment}}"
       - run: echo "hello word 2"
 
   run-hello-2:
     name: 😅 Print Hello 3
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - run: echo "hello word 3"
