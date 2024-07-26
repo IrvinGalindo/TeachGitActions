@@ -6,13 +6,11 @@ on:
 
 jobs:
   run-regression:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: ✅ Checkout Código
         uses: actions/checkout@v4
-        with:
-          repository: IrvinGalindo/TeachGitActions
 
       - name: ✅ Installing java 11
         uses: actions/setup-java@v2
