@@ -1,0 +1,16 @@
+name: Print Hello When schedule
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-to-stage:
+    name: 😅 Deploy to stage
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "deploying product to stage"
+
+  run-regression:
+    name: ✅ Run regression
+    needs: deploy-to-stage
+    uses: IrvinGalindo/TeachGitActions/.github/workflows/run-regression.yml@main
+    secrets: inherit

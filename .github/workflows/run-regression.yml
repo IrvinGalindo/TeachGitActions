@@ -1,5 +1,7 @@
 name: Run Regression 🧪
 on:
+  workflow_call:
+
   pull_request:
     branches:
       - main
