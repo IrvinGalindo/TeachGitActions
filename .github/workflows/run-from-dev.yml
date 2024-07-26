@@ -1,4 +1,4 @@
-name: Print Hello When schedule
+name: Run from dev
 on:
   workflow_dispatch:
 
